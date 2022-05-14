@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -63,9 +64,12 @@ public class Lista_Negocios extends AppCompatActivity implements Recycler_Negoci
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()){
                     Negocio negocio = dataSnapshot.getValue(Negocio.class);
                     negocio.setId(dataSnapshot.getKey());
-                    if (negocio.getTipo().equals(tipoNegocio)){
+                    if (negocio.getTipo().toLowerCase().equals(tipoNegocio.toLowerCase())){
                         listaNegocios.add(negocio);
                     }
+                }
+                if (listaNegocios.isEmpty()){
+                    Toast.makeText(getApplicationContext(),"No se encontraron negocios en esta categoría",Toast.LENGTH_LONG).show();
                 }
                 negociosAdapter = new Recycler_Negocios_Adapter(getApplicationContext(),listaNegocios,Lista_Negocios.this);
                 recyclerViewNegocios.setAdapter(negociosAdapter);

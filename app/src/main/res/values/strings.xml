@@ -18,16 +18,16 @@
     </string-array>
 
     <string-array name="lista_negocios">
-        <item>Médico</item>
-        <item>Mecánico</item>
-        <item>Estilista</item>
-        <item>Mascotas</item>
-        <item>Sastrería</item>
-        <item>Grúa</item>
-        <item>Fontanería</item>
-        <item>Cerrajería</item>
-        <item>Electricismo</item>
-        <item>Jardinería</item>
+        <item>medico</item>
+        <item>mecanico</item>
+        <item>estilista</item>
+        <item>mascotas</item>
+        <item>sastrería</item>
+        <item>grua</item>
+        <item>fontaneria</item>
+        <item>cerrajeria</item>
+        <item>electricismo</item>
+        <item>sardineria</item>
     </string-array>
 
     <!--Menu Principal-->

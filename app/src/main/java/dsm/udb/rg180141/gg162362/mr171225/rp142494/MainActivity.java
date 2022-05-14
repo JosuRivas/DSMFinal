@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
                         if (task.isSuccessful()){
                             if (esNegocio){
                                 Intent intent = new Intent(MainActivity.this,Dashboard_Negocio.class);
+                                intent.putExtra("user",correo);
                                 startActivity(intent);
                             }else{
                                 Intent intent = new Intent(MainActivity.this,activity_pantalla_principal.class);

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoCatedra">
         <activity
+            android:name=".Editar_Negocio"
+            android:exported="false" />
+        <activity
             android:name=".Dashboard_Negocio"
             android:exported="false" />
         <activity

@@ -113,6 +113,12 @@ public class activity_pantalla_principal extends AppCompatActivity implements Na
             case "tarjetaJardinero":
                 intent.putExtra("tipo","jardinero");
                 break;
+            case "tarjetaMascotas":
+                intent.putExtra("tipo","mascotas");
+                break;
+            case "tarjetaSastre":
+                intent.putExtra("tipo","sastreria");
+                break;
         }
         startActivity(intent);
     }
