@@ -22,12 +22,13 @@
         <item>mecanico</item>
         <item>estilista</item>
         <item>mascotas</item>
-        <item>sastrería</item>
+        <item>sastreria</item>
         <item>grua</item>
         <item>fontaneria</item>
         <item>cerrajeria</item>
         <item>electricismo</item>
-        <item>sardineria</item>
+        <item>jardineria</item>
+
     </string-array>
 
     <!--Menu Principal-->
